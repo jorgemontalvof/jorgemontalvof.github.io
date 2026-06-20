@@ -3,65 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jorge Montalvo</title>
-
+<title>Jorge Montalvo | AI, MLOps & Quantum Computing</title>
 <style>
-body{
-    font-family: Arial, sans-serif;
-    max-width:1000px;
-    margin:auto;
-    padding:40px;
-    background:#f4f6f9;
-}
-
-header{
-    text-align:center;
-}
-
-h1{
-    color:#0a66c2;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    margin-top:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#1f2937}
+header{background:#0f172a;color:white;padding:60px 20px;text-align:center}
+header h1{font-size:42px;margin:0;color:#60a5fa}
+header p{font-size:20px;margin-top:15px}
+nav{background:white;padding:15px;text-align:center;box-shadow:0 2px 8px #ddd;position:sticky;top:0}
+nav a{margin:0 15px;color:#0f172a;text-decoration:none;font-weight:bold}
+section{max-width:1100px;margin:30px auto;padding:0 20px}
+.card{background:white;border-radius:14px;padding:28px;margin-bottom:25px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+h2{color:#0f172a;border-bottom:2px solid #e5e7eb;padding-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.project{border-left:5px solid #2563eb}
+.badge{display:inline-block;background:#e0ecff;color:#1d4ed8;padding:6px 10px;border-radius:20px;margin:4px;font-size:14px}
+footer{text-align:center;padding:30px;background:#0f172a;color:white;margin-top:40px}
 </style>
 </head>
-
 <body>
 
 <header>
 <h1>Jorge Montalvo</h1>
-<h2>AI Engineer | MLOps | Kubernetes | OpenShift | Quantum Computing</h2>
+<p>AI Engineer | MLOps | Kubernetes | OpenShift | Quantum Computing</p>
 </header>
 
+<nav>
+<a href="#sobre-mi">Sobre mí</a>
+<a href="#profesionales">Proyectos</a>
+<a href="#laboratorio">Laboratorio</a>
+<a href="#skills">Skills</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<section id="sobre-mi">
 <div class="card">
-<h3>Sobre mí</h3>
+<h2>Sobre mí</h2>
 <p>
-Profesional especializado en Inteligencia Artificial,
-MLOps, Kubernetes, OpenShift y Computación Cuántica.
+Ingeniero especializado en Inteligencia Artificial, MLOps, Kubernetes, OpenShift,
+automatización empresarial y computación cuántica. Mi enfoque se centra en diseñar
+soluciones reales que combinen IA, arquitectura cloud, observabilidad y despliegue
+en entornos empresariales.
 </p>
 </div>
+</section>
 
+<section id="profesionales">
+<h2>Proyectos principales</h2>
+<div class="grid">
+
+<div class="card project">
+<h3>QuantumArchitectAI</h3>
+<p>Optimización inteligente de arquitecturas empresariales mediante IA y algoritmos inspirados en computación cuántica.</p>
+<span class="badge">IA</span><span class="badge">Arquitectura</span><span class="badge">Optimización</span>
+</div>
+
+<div class="card project">
+<h3>ModelPilot-AI</h3>
+<p>Plataforma para entrenamiento, validación, comparación y gobierno de modelos de Machine Learning.</p>
+<span class="badge">MLflow</span><span class="badge">MLOps</span><span class="badge">Docker</span>
+</div>
+
+<div class="card project">
+<h3>MCP Enterprise Platform</h3>
+<p>Ecosistema de agentes empresariales integrado con Kubernetes, OpenWebUI, MLflow, Wazuh, Jenkins y n8n.</p>
+<span class="badge">MCP</span><span class="badge">Kubernetes</span><span class="badge">Agentes IA</span>
+</div>
+
+<div class="card project">
+<h3>Plataforma MLOps OpenShift</h3>
+<p>Entorno para despliegue, observabilidad y operación de modelos de IA sobre Kubernetes/OpenShift.</p>
+<span class="badge">OpenShift</span><span class="badge">Kubeflow</span><span class="badge">Grafana</span>
+</div>
+
+<div class="card project">
+<h3>Investigación en Computación Cuántica</h3>
+<p>Aplicación de enfoques híbridos como FFT, IA, QSVM y Grover para detección de anomalías sutiles.</p>
+<span class="badge">QSVM</span><span class="badge">Grover</span><span class="badge">TFM</span>
+</div>
+
+<div class="card project">
+<h3>Arquitecturas Kubernetes/OpenShift</h3>
+<p>Diseño de pipelines, despliegues, observabilidad, seguridad y automatización para entornos empresariales.</p>
+<span class="badge">Tekton</span><span class="badge">ArgoCD</span><span class="badge">DevOps</span>
+</div>
+
+</div>
+</section>
+
+<section id="laboratorio">
+<h2>Laboratorio personal de innovación</h2>
 <div class="card">
-<h3>Proyectos destacados</h3>
+<p>Prototipos e ideas personales orientadas a IA aplicada, visión por computador, automatización y productos digitales.</p>
 <ul>
-<li>QuantumArchitectAI</li>
-<li>SmartBI-AI</li>
-<li>ModelPilot-AI</li>
-<li>OpenShift + Tekton</li>
-<li>Computación Cuántica Aplicada</li>
+<li>ChefAI — Asistente de cocina con visión artificial.</li>
+<li>TasteAI — Recomendación gastronómica mediante voz e IA.</li>
+<li>VoiceCoderAI — Programación asistida por voz.</li>
+<li>SmartInfra — Creación de infraestructuras cloud mediante texto o voz.</li>
+<li>MediBrief AI — Interpretación de informes médicos con IA.</li>
+<li>JobIA — Búsqueda inteligente de empleo.</li>
+<li>SketchLogic — Automatización de despliegues WebLogic/Jenkins/Ansible.</li>
 </ul>
 </div>
+</section>
 
+<section id="skills">
+<h2>Áreas técnicas</h2>
 <div class="card">
-<h3>Contacto</h3>
-<p>LinkedIn | GitHub | Email</p>
+<span class="badge">Python</span>
+<span class="badge">FastAPI</span>
+<span class="badge">Machine Learning</span>
+<span class="badge">IA Generativa</span>
+<span class="badge">MLOps</span>
+<span class="badge">Kubernetes</span>
+<span class="badge">OpenShift</span>
+<span class="badge">Tekton</span>
+<span class="badge">ArgoCD</span>
+<span class="badge">Docker</span>
+<span class="badge">Prometheus</span>
+<span class="badge">Grafana</span>
+<span class="badge">MLflow</span>
+<span class="badge">Computación Cuántica</span>
 </div>
+</section>
+
+<section id="contacto">
+<div class="card">
+<h2>Contacto</h2>
+<p>GitHub: <strong>jorgemontalvof</strong></p>
+<p>LinkedIn: añade aquí tu enlace profesional.</p>
+<p>Email: añade aquí tu correo profesional si deseas hacerlo público.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Jorge Montalvo — Portfolio profesional</p>
+</footer>
 
 </body>
 </html>
