@@ -3,37 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jorge Montalvo | AI, MLOps & Quantum Computing</title>
+<title>Jorge Montalvo | AI Platform, MLOps & Quantum-Inspired Architecture</title>
 <style>
-:root{--dark:#0f172a;--blue:#2563eb;--soft:#f4f6f8;--text:#1f2937;--muted:#64748b;--card:#fff}
+:root{
+  --dark:#0f172a;--blue:#2563eb;--cyan:#0ea5e9;--violet:#7c3aed;--soft:#f4f6f8;
+  --text:#1f2937;--muted:#64748b;--card:#fff;--line:#e5e7eb;--success:#059669
+}
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:var(--soft);color:var(--text)}
-header{background:linear-gradient(135deg,#0f172a,#111827);color:white;padding:72px 20px;text-align:center}
-header h1{font-size:46px;margin:0;color:#60a5fa;letter-spacing:.5px}
+header{background:linear-gradient(135deg,#0f172a,#111827 45%,#1e1b4b);color:white;padding:78px 20px;text-align:center}
+header h1{font-size:48px;margin:0;color:#60a5fa;letter-spacing:.5px}
 header p{font-size:20px;margin-top:15px}
-header .intro{max-width:850px;margin:18px auto 0;color:#dbeafe;font-size:16px;line-height:1.6}
+header .intro{max-width:980px;margin:18px auto 0;color:#dbeafe;font-size:16px;line-height:1.7}
+.kpis{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:26px}.kpi{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:12px 16px;min-width:170px}.kpi strong{display:block;color:white;font-size:20px}.kpi span{color:#cbd5e1;font-size:13px}
 nav{background:white;padding:15px;text-align:center;box-shadow:0 2px 8px #ddd;position:sticky;top:0;z-index:10}
-nav a{margin:0 14px;color:#0f172a;text-decoration:none;font-weight:bold}
-section{max-width:1160px;margin:34px auto;padding:0 20px}
+nav a{margin:0 12px;color:#0f172a;text-decoration:none;font-weight:bold}
+section{max-width:1180px;margin:34px auto;padding:0 20px}
 .card{background:var(--card);border-radius:14px;padding:28px;margin-bottom:25px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-h2{color:#0f172a;border-bottom:2px solid #e5e7eb;padding-bottom:10px}
-h3{color:#111827;margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}.project{border-left:5px solid var(--blue);min-height:230px;display:flex;flex-direction:column;justify-content:space-between}.project p{line-height:1.45}.badge{display:inline-block;background:#e0ecff;color:#1d4ed8;padding:6px 10px;border-radius:20px;margin:4px;font-size:14px}.muted{color:var(--muted)}.highlight{border-left:5px solid #0ea5e9}.buttons{margin-top:20px}.btn{display:inline-block;background:#2563eb;color:white;text-decoration:none;padding:11px 16px;border-radius:10px;font-weight:bold;margin:6px}.btn.secondary{background:#0f172a}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}footer{text-align:center;padding:30px;background:#0f172a;color:white;margin-top:40px}
-@media(max-width:700px){header h1{font-size:34px}nav a{display:inline-block;margin:8px}.project{min-height:auto}}
+h2{color:#0f172a;border-bottom:2px solid var(--line);padding-bottom:10px}h3{color:#111827;margin-top:0}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px}.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.project{border-left:5px solid var(--blue);min-height:250px;display:flex;flex-direction:column;justify-content:space-between}.project.ai{border-left-color:var(--blue)}.project.quantum{border-left-color:var(--violet)}.project.platform{border-left-color:var(--cyan)}.project p{line-height:1.48}.badge{display:inline-block;background:#e0ecff;color:#1d4ed8;padding:6px 10px;border-radius:20px;margin:4px;font-size:14px}.badge.q{background:#ede9fe;color:#5b21b6}.badge.p{background:#e0f2fe;color:#0369a1}.badge.g{background:#dcfce7;color:#047857}.highlight{border-left:5px solid #0ea5e9}.quantum-box{border-left:5px solid var(--violet)}.buttons{margin-top:20px}.btn{display:inline-block;background:#2563eb;color:white;text-decoration:none;padding:11px 16px;border-radius:10px;font-weight:bold;margin:6px}.btn.secondary{background:#0f172a}.btn.quantum{background:#6d28d9}
+ul{padding-left:20px;line-height:1.7}.section-label{font-size:13px;font-weight:bold;color:#64748b;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}.pill-row{margin-top:12px}.timeline{border-left:3px solid #dbeafe;padding-left:18px}.timeline h3{margin-bottom:6px}.mini{font-size:14px;color:#64748b}.impact{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-top:12px}footer{text-align:center;padding:30px;background:#0f172a;color:white;margin-top:40px}
+@media(max-width:700px){header h1{font-size:34px}nav a{display:inline-block;margin:8px}.project{min-height:auto}.kpi{min-width:140px}}
 </style>
 </head>
 <body>
 
 <header>
 <h1>Jorge Montalvo</h1>
-<p>AI Engineer | MLOps | Kubernetes | OpenShift | Quantum Computing</p>
-<p class="intro">Portfolio técnico orientado a soluciones reales de inteligencia artificial, arquitecturas empresariales, optimización quantum-inspired, visión por computador, sistemas multiagente y plataformas MLOps.</p>
+<p>AI Platform Engineer | MLOps | OpenShift | DevOps | Hybrid Quantum Architecture</p>
+<p class="intro">
+Portfolio técnico de soluciones reales de Inteligencia Artificial, plataformas MLOps, automatización empresarial,
+sistemas multiagente, visión por computador y arquitecturas quantum-inspired aplicadas a entornos críticos.
+</p>
+<div class="kpis">
+  <div class="kpi"><strong>15+ años</strong><span>Sistemas críticos y producción</span></div>
+  <div class="kpi"><strong>5+ años</strong><span>Kubernetes / OpenShift</span></div>
+  <div class="kpi"><strong>IA + MLOps</strong><span>FastAPI, MLflow, Kubeflow, RAG</span></div>
+  <div class="kpi"><strong>Quantum</strong><span>QML, QSVM, FFT, PQC</span></div>
+</div>
 </header>
 
 <nav>
 <a href="#sobre-mi">Sobre mí</a>
-<a href="#aplicaciones">Aplicaciones</a>
-<a href="#lineas">Líneas técnicas</a>
+<a href="#ia">IA</a>
+<a href="#cuantica">Cuántica</a>
+<a href="#plataforma">Plataforma</a>
+<a href="#experiencia">Experiencia</a>
 <a href="#skills">Skills</a>
 <a href="#contacto">Contacto</a>
 </nav>
@@ -42,130 +58,118 @@ h3{color:#111827;margin-top:0}
 <div class="card highlight">
 <h2>Sobre mí</h2>
 <p>
-Ingeniero especializado en Inteligencia Artificial, MLOps, Kubernetes, OpenShift,
-automatización empresarial y computación cuántica. Mi enfoque se centra en diseñar
-soluciones reales que combinan IA, arquitectura cloud, observabilidad, visión por computador,
-sistemas multiagente y optimización avanzada.
+Ingeniero en Computación y Máster en Inteligencia Artificial Aplicada, especializado en construir plataformas de IA
+productivas sobre Kubernetes/OpenShift. Mi experiencia combina DevOps, MLOps, automatización, backend con FastAPI,
+modelos generativos, RAG, gobierno del dato, observabilidad y operación de sistemas críticos.
+</p>
+<p>
+Actualmente desarrollo líneas de investigación y prototipos en arquitectura híbrida clásico-cuántica, detección de anomalías
+sutiles, optimización combinatoria y seguridad postcuántica aplicada a microservicios y entornos distribuidos.
 </p>
 </div>
 </section>
 
-<section id="aplicaciones">
-<h2>Aplicaciones montadas</h2>
+<section id="ia">
+<h2>Primera sección — Inteligencia Artificial aplicada</h2>
+<p class="muted">Aplicaciones construidas con foco en IA real, automatización, modelos, dashboards, agentes, visión y MLOps.</p>
 <div class="grid">
 
-<div class="card project">
-<div>
-<h3>QuantumVision AI</h3>
-<p>Plataforma de detección y clasificación de objetos que combina visión por computador con YOLO y un Object Signature Engine multiseñal basado en señales térmicas, radar, movimiento y datos sintéticos.</p>
-</div>
-<div><span class="badge">YOLO</span><span class="badge">Computer Vision</span><span class="badge">Object Signature</span><span class="badge">Datos sintéticos</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">Computer Vision</div><h3>QuantumVision AI</h3><p>Plataforma de detección y clasificación de objetos que combina YOLO con un Object Signature Engine multiseñal basado en datos térmicos, radar, movimiento y datasets sintéticos.</p><div class="impact"><strong>Valor:</strong> permite validar objetos no solo por imagen, sino por señales complementarias.</div></div><div><span class="badge">YOLO</span><span class="badge">Computer Vision</span><span class="badge">Object Signature</span><span class="badge">Datos sintéticos</span></div></div>
 
-<div class="card project">
-<div>
-<h3>Executive Copilot AI</h3>
-<p>Plataforma multiagente de copiloto ejecutivo para dirección, orientada a KPIs, forecast, riesgo, auditoría, proveedores, reporting ejecutivo y toma de decisiones.</p>
-</div>
-<div><span class="badge">Multiagente</span><span class="badge">Forecast</span><span class="badge">Riesgo</span><span class="badge">Executive AI</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">Copiloto ejecutivo</div><h3>Executive Copilot AI</h3><p>Plataforma multiagente para dirección, orientada a KPIs, forecast, riesgo, auditoría, proveedores, reporting ejecutivo y soporte a toma de decisiones.</p><div class="impact"><strong>Valor:</strong> transforma datos de negocio en decisiones accionables.</div></div><div><span class="badge">Multiagente</span><span class="badge">Forecast</span><span class="badge">Riesgo</span><span class="badge">Executive AI</span></div></div>
 
-<div class="card project">
-<div>
-<h3>QuantumGeoVision</h3>
-<p>Plataforma experimental para datos geoespaciales espacio-temporales, detección de anomalías y optimización quantum-inspired con dataset sintético, FFT, modelos de anomalías y recocido simulado.</p>
-</div>
-<div><span class="badge">GeoAI</span><span class="badge">FFT</span><span class="badge">Anomalías</span><span class="badge">Simulated Annealing</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">Agentes IA</div><h3>AgentFactoryAI</h3><p>Sistema multiagente con fábrica de agentes, aprobación humana desde dashboard, trazabilidad y enrutado por intención para construir flujos inteligentes controlados.</p><div class="impact"><strong>Valor:</strong> introduce gobierno humano sobre decisiones automatizadas.</div></div><div><span class="badge">Agentes IA</span><span class="badge">Human-in-the-loop</span><span class="badge">Dashboard</span><span class="badge">Intent Routing</span></div></div>
 
-<div class="card project">
-<div>
-<h3>AgentFactoryAI</h3>
-<p>Sistema multiagente con fábrica de agentes, aprobación humana desde dashboard y enrutado por intención para construir flujos inteligentes controlados.</p>
-</div>
-<div><span class="badge">Agentes IA</span><span class="badge">Human-in-the-loop</span><span class="badge">Dashboard</span><span class="badge">Intent Routing</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">MLOps</div><h3>ModelPilot AI</h3><p>Plataforma para ejecutar experimentos de Machine Learning, comparar modelos, generar informes ejecutivos y exponer métricas mediante Prometheus, Grafana y MLflow.</p><div class="impact"><strong>Valor:</strong> convierte el entrenamiento en un flujo medible, gobernado y repetible.</div></div><div><span class="badge">MLflow</span><span class="badge">Prometheus</span><span class="badge">Grafana</span><span class="badge">FastAPI</span></div></div>
 
-<div class="card project">
-<div>
-<h3>QuantumLab Workbench</h3>
-<p>Laboratorio visual de computación cuántica en fase inicial, pensado para experimentar con circuitos, algoritmos, simulaciones y conceptos cuánticos de forma práctica.</p>
-</div>
-<div><span class="badge">Quantum</span><span class="badge">Workbench</span><span class="badge">Circuitos</span><span class="badge">Simulación</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">Business Intelligence</div><h3>SmartBI AI</h3><p>Microservicio de consulta inteligente para Business Intelligence mediante lenguaje natural, integrando FastAPI, Postgres, Qdrant y flujos de automatización.</p><div class="impact"><strong>Valor:</strong> permite consultar datos empresariales sin depender de SQL manual.</div></div><div><span class="badge">BI</span><span class="badge">RAG</span><span class="badge">PostgreSQL</span><span class="badge">Qdrant</span></div></div>
 
-<div class="card project">
-<div>
-<h3>QuantumArchitect AI</h3>
-<p>Aplicación Python/Streamlit para optimizar asignaciones entre aplicaciones, servicios, workloads o logs y destinos técnicos como servidores, nodos, topologías o arquitecturas.</p>
-</div>
-<div><span class="badge">Python</span><span class="badge">Streamlit</span><span class="badge">Optimización</span><span class="badge">Arquitectura</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">Automatización empresarial</div><h3>Control-M AIOps Optimizer</h3><p>Aplicación orientada a optimizar cadenas Control-M, priorizar ejecuciones, detectar cuellos de botella y proponer acciones operativas mediante IA y optimización combinatoria.</p><div class="impact"><strong>Valor:</strong> reduce dependencia manual en incidencias repetitivas de producción.</div></div><div><span class="badge">AIOps</span><span class="badge">Control-M</span><span class="badge">Optimización</span><span class="badge">Dashboard</span></div></div>
 
-<div class="card project">
-<div>
-<h3>Hybrid Quantum Finance AI</h3>
-<p>Sistema de optimización de carteras de activos aplicando técnicas clásicas y quantum-inspired para apoyar decisiones financieras y escenarios de inversión.</p>
-</div>
-<div><span class="badge">Finanzas</span><span class="badge">Portfolio Optimization</span><span class="badge">Monte Carlo</span><span class="badge">Quantum-inspired</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">Arquitectura IA</div><h3>Architect AI</h3><p>Aplicación que analiza arquitecturas técnicas, calcula puntuaciones, riesgos, alternativas y genera informes ejecutivos en PDF/HTML con recomendaciones implantables.</p><div class="impact"><strong>Valor:</strong> convierte decisiones de arquitectura en análisis cuantificable.</div></div><div><span class="badge">Arquitectura</span><span class="badge">Scoring</span><span class="badge">PDF</span><span class="badge">Governance</span></div></div>
 
-<div class="card project">
-<div>
-<h3>Quantum Molecular Analyzer</h3>
-<p>Pipeline híbrido de detección de moléculas anticancerígenas combinando FFT, kernel cuántico clásico, Isolation Forest y dashboard React interactivo.</p>
-</div>
-<div><span class="badge">BioAI</span><span class="badge">FFT</span><span class="badge">Kernel Cuántico</span><span class="badge">React</span></div>
-</div>
+<div class="card project ai"><div><div class="section-label">DevOps inteligente</div><h3>JenkinsLogBot / K8s Log Analyzer</h3><p>Agente de análisis de logs para Jenkins y Kubernetes con detección de anomalías, clasificación de errores, explicación técnica y propuesta de acciones correctivas.</p><div class="impact"><strong>Valor:</strong> acelera diagnóstico en pipelines y plataformas Kubernetes.</div></div><div><span class="badge">Logs</span><span class="badge">Isolation Forest</span><span class="badge">Kubernetes</span><span class="badge">DevOps</span></div></div>
 
+</div>
+</section>
+
+<section id="cuantica">
+<h2>Segunda sección — Computación cuántica y quantum-inspired</h2>
+<p class="muted">Proyectos de investigación aplicada, optimización, kernels, anomalías, FFT, QML y seguridad postcuántica.</p>
+<div class="grid">
+
+<div class="card project quantum"><div><div class="section-label">Optimización de arquitecturas</div><h3>QuantumArchitect AI</h3><p>Aplicación Python/Streamlit para optimizar asignaciones entre aplicaciones, servicios, workloads o logs y destinos técnicos como servidores, nodos, GPUs, topologías o arquitecturas.</p><div class="impact"><strong>Enfoque:</strong> optimización combinatoria, coste, capacidad, afinidad técnica y restricciones.</div></div><div><span class="badge q">HKP-QAP</span><span class="badge q">QUBO</span><span class="badge q">Simulated Annealing</span><span class="badge q">Arquitectura</span></div></div>
+
+<div class="card project quantum"><div><div class="section-label">GeoAI cuántico</div><h3>QuantumGeoVision</h3><p>Plataforma experimental para datos geoespaciales espacio-temporales, detección de anomalías y priorización de zonas críticas mediante FFT, modelos clásicos y optimización quantum-inspired.</p><div class="impact"><strong>Enfoque:</strong> señales, anomalías, priorización y análisis espacio-temporal.</div></div><div><span class="badge q">GeoAI</span><span class="badge q">FFT</span><span class="badge q">Anomalías</span><span class="badge q">Recocido simulado</span></div></div>
+
+<div class="card project quantum"><div><div class="section-label">Finanzas</div><h3>Hybrid Quantum Finance AI</h3><p>Sistema de optimización de carteras de activos combinando técnicas clásicas y quantum-inspired para apoyar decisiones financieras, riesgo, escenarios y asignación eficiente.</p><div class="impact"><strong>Enfoque:</strong> portfolio optimization, riesgo, retorno y restricciones.</div></div><div><span class="badge q">Finanzas</span><span class="badge q">Portfolio</span><span class="badge q">Monte Carlo</span><span class="badge q">Quantum-inspired</span></div></div>
+
+<div class="card project quantum"><div><div class="section-label">BioAI</div><h3>Quantum Molecular Analyzer</h3><p>Pipeline híbrido de análisis molecular combinando FFT, kernel cuántico clásico, Isolation Forest y dashboard React para priorizar moléculas candidatas.</p><div class="impact"><strong>Enfoque:</strong> señales moleculares, patrones sutiles y scoring de candidatos.</div></div><div><span class="badge q">BioAI</span><span class="badge q">FFT</span><span class="badge q">Kernel Cuántico</span><span class="badge q">React</span></div></div>
+
+<div class="card project quantum"><div><div class="section-label">Laboratorio cuántico</div><h3>QuantumLab Workbench</h3><p>Laboratorio visual para experimentar con circuitos, algoritmos, simulaciones y conceptos cuánticos como Grover, QPE, VQE, QSVM y kernels.</p><div class="impact"><strong>Enfoque:</strong> aprendizaje práctico, simulación y validación experimental.</div></div><div><span class="badge q">Circuitos</span><span class="badge q">QML</span><span class="badge q">QSVM</span><span class="badge q">Simulación</span></div></div>
+
+<div class="card project quantum"><div><div class="section-label">TFM / Investigación</div><h3>Quantum Anomaly Detection</h3><p>Pipeline híbrido para detección de anomalías sutiles en señales, logs e imágenes, combinando FFT, IA clásica, kernels cuánticos y búsqueda/optimización inspirada en Grover.</p><div class="impact"><strong>Enfoque:</strong> anomalías casi invisibles aplicadas a ciberseguridad y dominios críticos.</div></div><div><span class="badge q">QSVM</span><span class="badge q">Q-KAD</span><span class="badge q">FFT</span><span class="badge q">Ciberseguridad</span></div></div>
+
+</div>
+</section>
+
+<section id="plataforma">
+<h2>Plataforma IA empresarial</h2>
+<div class="two">
+<div class="card platform">
+<h3>Plataforma IA híbrida on-premise</h3>
+<p>Arquitectura modular desplegable en OpenShift/Kubernetes con n8n, FastAPI, Open WebUI, Qdrant, PostgreSQL, Keycloak, modelos locales y GitOps.</p>
+<div class="pill-row"><span class="badge p">OpenShift</span><span class="badge p">FastAPI</span><span class="badge p">n8n</span><span class="badge p">Open WebUI</span><span class="badge p">Qdrant</span><span class="badge p">Keycloak</span></div>
+</div>
+<div class="card platform">
+<h3>Gobierno del dato y MLOps</h3>
+<p>Flujos ETL, validación de calidad, trazabilidad, separación de datos válidos/erróneos, MLflow, Kubeflow, pipelines de inferencia y despliegue de modelos como APIs.</p>
+<div class="pill-row"><span class="badge p">Kubeflow</span><span class="badge p">MLflow</span><span class="badge p">Kafka</span><span class="badge p">PostgreSQL</span><span class="badge p">Oracle</span><span class="badge p">Data Lake</span></div>
+</div>
+</div>
+</section>
+
+<section id="experiencia">
+<h2>Experiencia profesional resumida</h2>
+<div class="card timeline">
+<h3>INETUM — AI Platform Engineer & Quantum-Inspired Research</h3>
+<p class="mini">06/2025 – Actualidad</p>
+<ul>
+<li>Diseño de plataformas avanzadas de IA, automatización inteligente y MLOps sobre Kubernetes/OpenShift.</li>
+<li>Investigación aplicada en QML, QSVM, FFT, kernels híbridos, anomalías sutiles y arquitecturas quantum-inspired.</li>
+<li>Integración de FastAPI, n8n, Open WebUI, Qdrant, PostgreSQL, Keycloak, MLflow, Kubeflow, Jenkins, Tekton y GitHub Actions.</li>
+</ul>
+<h3>AUBAY — Ingeniero IA / DevOps</h3>
+<p class="mini">2020 – 05/2025</p>
+<ul>
+<li>Implementación de RAG, embeddings semánticos, LangChain, ChromaDB, BERT, LSTM/GRU, modelos generativos y automatización inteligente.</li>
+<li>Soluciones con Amazon Bedrock, Claude, Mistral y GPT aplicadas a flujos empresariales.</li>
+</ul>
+<h3>GETRONICS — DevOps / GitOps / Kubernetes / Middleware</h3>
+<p class="mini">2008 – 2020</p>
+<ul>
+<li>CI/CD con GitHub Actions, Jenkins, Nexus, Maven, Docker, ArgoCD, Kubernetes, Prometheus y Grafana.</li>
+<li>Administración de WebLogic, WebSphere, Tomcat, Tibco y coordinación de pases a producción en entornos críticos.</li>
+</ul>
 </div>
 </section>
 
 <section id="lineas">
 <h2>Líneas técnicas principales</h2>
-<div class="two">
-<div class="card">
-<h3>IA aplicada y visión por computador</h3>
-<p>Detección de objetos, clasificación, análisis multiseñal, generación de datasets sintéticos, validación y pipelines de inferencia.</p>
-</div>
-<div class="card">
-<h3>Sistemas multiagente y copilotos</h3>
-<p>Agentes especializados, enrutado por intención, aprobación humana, dashboards ejecutivos y automatización de decisiones.</p>
-</div>
-<div class="card">
-<h3>Optimización quantum-inspired</h3>
-<p>Aplicación de FFT, kernels, recocido simulado, modelos de anomalías y optimización combinatoria en dominios técnicos y financieros.</p>
-</div>
-<div class="card">
-<h3>MLOps y plataformas empresariales</h3>
-<p>Despliegue, observabilidad, dashboards, gobierno de modelos, integración con Kubernetes/OpenShift y arquitectura cloud.</p>
-</div>
+<div class="three">
+<div class="card"><h3>IA aplicada</h3><p>Computer vision, NLP, RAG, LLMs, modelos generativos, clasificación, forecasting y automatización.</p></div>
+<div class="card"><h3>MLOps / LLMOps</h3><p>Kubeflow, MLflow, tracking, registro de modelos, APIs de inferencia, despliegue y observabilidad.</p></div>
+<div class="card"><h3>Quantum-inspired</h3><p>QUBO, simulated annealing, kernels, QSVM, FFT, anomalías sutiles y optimización combinatoria.</p></div>
+<div class="card"><h3>Platform Engineering</h3><p>OpenShift, Kubernetes, Helm, Kustomize, ArgoCD, Keycloak, GitOps, seguridad y escalabilidad.</p></div>
+<div class="card"><h3>DevOps crítico</h3><p>Jenkins, Tekton, Azure DevOps, GitHub Actions, SonarQube, Nexus, despliegues y SLA.</p></div>
+<div class="card"><h3>Datos</h3><p>PostgreSQL, Oracle, Kafka, Qdrant, Data Lake, ETL, calidad del dato y trazabilidad.</p></div>
 </div>
 </section>
 
 <section id="skills">
 <h2>Áreas técnicas</h2>
 <div class="card">
-<span class="badge">Python</span>
-<span class="badge">FastAPI</span>
-<span class="badge">Streamlit</span>
-<span class="badge">React</span>
-<span class="badge">Machine Learning</span>
-<span class="badge">Deep Learning</span>
-<span class="badge">YOLO</span>
-<span class="badge">Computer Vision</span>
-<span class="badge">Isolation Forest</span>
-<span class="badge">FFT</span>
-<span class="badge">MLOps</span>
-<span class="badge">Kubernetes</span>
-<span class="badge">OpenShift</span>
-<span class="badge">Docker</span>
-<span class="badge">Prometheus</span>
-<span class="badge">Grafana</span>
-<span class="badge">MLflow</span>
-<span class="badge">Computación Cuántica</span>
-<span class="badge">Quantum-inspired Optimization</span>
-<span class="badge">Sistemas Multiagente</span>
+<span class="badge">Python</span><span class="badge">FastAPI</span><span class="badge">Streamlit</span><span class="badge">React</span><span class="badge">Machine Learning</span><span class="badge">Deep Learning</span><span class="badge">BERT</span><span class="badge">RAG</span><span class="badge">LangChain</span><span class="badge">LLMs</span><span class="badge">YOLO</span><span class="badge">Computer Vision</span><span class="badge">Isolation Forest</span><span class="badge">FFT</span><span class="badge">Kubeflow</span><span class="badge">MLflow</span><span class="badge">Kubernetes</span><span class="badge">OpenShift</span><span class="badge">Docker</span><span class="badge">Helm</span><span class="badge">ArgoCD</span><span class="badge">Kustomize</span><span class="badge">Prometheus</span><span class="badge">Grafana</span><span class="badge q">QML</span><span class="badge q">QSVM</span><span class="badge q">QUBO</span><span class="badge q">PQC</span><span class="badge q">ML-KEM</span><span class="badge q">ML-DSA</span><span class="badge p">Keycloak</span><span class="badge p">Qdrant</span><span class="badge p">PostgreSQL</span><span class="badge p">Oracle</span><span class="badge p">Kafka</span><span class="badge p">Tekton</span><span class="badge p">Jenkins</span><span class="badge p">Azure DevOps</span><span class="badge p">GitHub Actions</span><span class="badge p">SonarQube</span>
 </div>
 </section>
 
@@ -173,16 +177,17 @@ sistemas multiagente y optimización avanzada.
 <div class="card">
 <h2>Contacto</h2>
 <p>GitHub: <strong>jorgemontalvof</strong></p>
-<p>LinkedIn: añade aquí tu enlace profesional.</p>
-<p>Email: añade aquí tu correo profesional si deseas hacerlo público.</p>
+<p>LinkedIn: <strong>linkedin.com/in/jorge-m-271b26341</strong></p>
+<p>Ubicación profesional: Madrid | Barcelona | Valencia</p>
 <div class="buttons">
 <a class="btn secondary" href="https://github.com/jorgemontalvof" target="_blank">Ver GitHub</a>
+<a class="btn" href="https://linkedin.com/in/jorge-m-271b26341" target="_blank">Ver LinkedIn</a>
 </div>
 </div>
 </section>
 
 <footer>
-<p>© 2026 Jorge Montalvo — Portfolio profesional</p>
+<p>© 2026 Jorge Montalvo — AI Platform, MLOps & Quantum-Inspired Architecture</p>
 </footer>
 
 </body>
